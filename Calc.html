@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Time Zone Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Date Time Zone Calculator</h2>
+    <form id="dateTimeForm">
+        Original Date and Time: <input type="datetime-local" id="originalDateTime"><br>
+        Origin Timezone: <input type="text" id="originTimezone" placeholder="e.g., America/New_York"><br>
+        Validity Hours: <input type="number" id="validityHours"><br>
+        Target Timezone: <input type="text" id="targetTimezone" placeholder="e.g., America/Denver"><br>
+        <button type="button" onclick="calculateTime()">Calculate</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
